@@ -1,0 +1,12 @@
+<h1><%= @post.title %></h1>
+<h4> User: <a href="/users/<%= @user.id %>"> <%= @user.username %> </a> </h4>
+<p>
+	<%= @post.content %>
+	<%= link_to "Edit", edit_post_path(@post) %>
+</p>
+	<%= link_to "Comment", new_comment_path(comment)
+<ul>
+	<li>
+		<%= @comment.content%>
+	</li>
+</ul>
