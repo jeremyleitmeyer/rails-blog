@@ -1,7 +1,13 @@
-<%= form_for Comment.new do |f| %>
+	<div class="comments-new">
+	<% if current_user %>
+		<%= form_for @comment do |f| %>
+			<%= f.hidden_field :post_id, value: params[:post_id] %>
+			<%= f.hidden_field :user_id, value: current_user.id %>
 
-	<%= f.label :content %>
-	<%= f.text_area :content %>
+			<%= f.label :content %>
+			<%= f.text_field :content %>
 
-	<%= f.submit %>
-<% end %>
+			<%= f.submit %>
+		<% end %>
+	<% end %>
+</div>

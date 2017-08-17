@@ -1,28 +1,25 @@
 class CommentsController < ApplicationController
-  def new
+def new
+  @comment = Comment.new
+end
 
+def create
+	@post = Post.find_by_id(:post_id)
+ 	@comment = Comment.new(comment_params)
+  if @comment.save
+    redirect_to posts_path(@post)
+  else
+    redirect_to "/"
   end
+end
 
-  def create
-  	user = User.find_by_id(session[:user_id])
-  	comment = user.posts.comments.new(params[:comment])
-	  if comment.save && user.save
-	    redirect_to post_path(post)
-	  else
-	    redirect_to post_path(new)
-	  end
+def show
+  @comment = Comment.find_by_id(params[:id])
+end
+
+private
+
+  def comment_params
+    params.require(:comment).permit(:content, :post_id, :user_id)
   end
-
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def destroy
-
-  end
-
 end

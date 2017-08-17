@@ -11,7 +11,7 @@
   <body>
 
   <p>Current User: <%= current_user ? current_user.username : "No user signed in." %></p>
-  <a href="/posts">Home</a>
+  <a href="/">Home</a>
   <ul>
   <% if current_user %>
     <li><a href="/users/<%= current_user.id %>">My Profile</a></li>

@@ -1,12 +1,13 @@
 class PostsController < ApplicationController
 	def index	
-		@posts = Post.all
+		@posts = Post.all.last(10).sort_by { |r| r.id }.reverse
+		@post = Post.find_by_id(params[:id])
 	end
 
   def show
   	@post = Post.find_by_id(params[:id])
   	@user = @post.user
-  	@comment = @post.comment
+  	@comments = @post.comments
   end
 
   def new
@@ -38,7 +39,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-  	params.require(:post).permit(:title, :content)
+  	params.require(:post).permit(:id, :title, :content)
   end
 
 end
