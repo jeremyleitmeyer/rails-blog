@@ -12,9 +12,3 @@ This is a project demostrating how to use Ruby on Rails.
 ## Authors
 
 * **Jeremy Leitmyer**
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
