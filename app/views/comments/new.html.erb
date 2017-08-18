@@ -1,12 +1,11 @@
 <div class="comments-new">
 	<% if current_user %>
-		<%= form_for @comment do |f| %>
+		<%= bootstrap_form_for @comment do |f| %>
 			<%= f.hidden_field :post_id, value: params[:post_id] %>
 			<%= f.hidden_field :user_id, value: current_user.id %>
-
-			<%= f.label :content %>
+		<br>
 			<%= f.text_field :content %>
-
+		<br>
 			<%= f.submit %>
 		<% end %>
 	<% end %>

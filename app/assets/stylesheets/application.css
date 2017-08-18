@@ -12,26 +12,47 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
 
 body {
  	text-align: center;
- 	color: white;
+ 	color: black;
  	background-color: black;
  }
+
+.btn {
+	width: 100px;
+	margin-bottom: 5px;
+}
+
+a {
+	color: black;
+}
 
  hr {
  	width: 40%;
  }
 
+ textarea {
+ 	width: 300px;
+ 	height: 120px;
+ 	resize: none;
+ }
+
 .middle {
 	width: 85%;
 	margin: 0 auto;
-	margin-top: -18px;
+	margin-top: -15px;
 	background-color: beige;
 	padding-bottom: 10px;
+	min-height: 600px;
 }
 
+.form-group {
+	margin: 0 auto;
+	width: 300px;
+}
 
 .front-page-posts {
 	text-align: center;

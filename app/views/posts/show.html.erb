@@ -12,9 +12,10 @@
 	<br>
 	<h1>Comments: </h1>
 		<% @comments.each do |comment| %>
+					<h4>Posted by: <%= comment.user.username %></h4>
 					<p><%= comment.content%></p>
 					<br>
 			<% end %>
-	<p><%= link_to "Add Comment", new_comment_path(post_id: @post.id) %></p>
+	<%= link_to "Add Comment", new_comment_path(post_id: @post.id) %>
 	<% end %>
 </div>
