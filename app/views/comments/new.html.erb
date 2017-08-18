@@ -1,4 +1,4 @@
-	<div class="comments-new">
+<div class="comments-new">
 	<% if current_user %>
 		<%= form_for @comment do |f| %>
 			<%= f.hidden_field :post_id, value: params[:post_id] %>

@@ -1,16 +1,19 @@
-<div class="post-show">
+<div class="posts-show">
 	<% if current_user %>
 	<h1><%= @post.title %></h1>
+	<br>
 	<h4> User: <a href="/users/<%= @user.id %>"> <%= @user.username %> </a> </h4>
+	<br>
 	<p>
 		<%= @post.content %>
 		<%= link_to "Edit", edit_post_path(@post) %>
 	</p>
+	<br>
+	<br>
 	<h1>Comments: </h1>
 		<% @comments.each do |comment| %>
 					<p><%= comment.content%></p>
 					<br>
-				</div>
 			<% end %>
 	<p><%= link_to "Add Comment", new_comment_path(post_id: @post.id) %></p>
 	<% end %>

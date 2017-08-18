@@ -14,18 +14,102 @@
  *= require_self
  */
 
- body {
+body {
  	text-align: center;
  	color: white;
  	background-color: black;
  }
 
- ul li {
- 	text-decoration: none;
+ hr {
+ 	width: 40%;
  }
 
+.middle {
+	width: 85%;
+	margin: 0 auto;
+	margin-top: -18px;
+	background-color: beige;
+	padding-bottom: 10px;
+}
+
+
 .front-page-posts {
-	border: 1px solid black;
-	margin: 5px;
-	width: 400px;
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.posts-edit {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.posts-new {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.posts-show {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.users-edit {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.users-show {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.users-new {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.comments-edit {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
+}
+
+.comments-new {
+	text-align: center;
+	background-color: darkgrey;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: 2px solid black;
+	width: 500px;
 }
