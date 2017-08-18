@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails-blog 
 
-Things you may want to cover:
+This is a project demostrating how to use Ruby on Rails. 
 
-* Ruby version
+## Built With
 
-* System dependencies
+* Rails
+* Ruby
 
-* Configuration
+## Authors
 
-* Database creation
+* **Jeremy Leitmyer**
 
-* Database initialization
+## Acknowledgments
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc

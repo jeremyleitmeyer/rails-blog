@@ -15,6 +15,7 @@
  *= require rails_bootstrap_forms
  */
 
+/*general tag styles*/
 body {
  	text-align: center;
  	color: black;
@@ -40,6 +41,7 @@ a {
  	resize: none;
  }
 
+/*center layout*/
 .middle {
 	width: 85%;
 	margin: 0 auto;
@@ -49,11 +51,13 @@ a {
 	min-height: 600px;
 }
 
+/*bootstrap form tag*/
 .form-group {
 	margin: 0 auto;
 	width: 300px;
 }
 
+/*misc tags named accordingly to erbs*/
 .front-page-posts {
 	text-align: center;
 	background-color: darkgrey;

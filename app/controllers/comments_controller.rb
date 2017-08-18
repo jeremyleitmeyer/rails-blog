@@ -5,9 +5,8 @@ end
 
 def create
 	@post = Post.find_by_id(:post_id)
-
+	# create comments and save to specific post
  	@comment = Comment.new(comment_params)
- 	binding.pry
   if @comment.save
     redirect_to posts_path(@post)
   else
