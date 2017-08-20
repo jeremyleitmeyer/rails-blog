@@ -27,6 +27,10 @@ body {
 	margin-bottom: 5px;
 }
 
+.warning {
+	color: red;
+}
+
 a {
 	color: black;
 }
@@ -45,7 +49,7 @@ a {
 .middle {
 	width: 85%;
 	margin: 0 auto;
-	margin-top: -15px;
+	margin-top: -18px;
 	background-color: beige;
 	padding-bottom: 10px;
 	min-height: 600px;
