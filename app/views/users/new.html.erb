@@ -1,13 +1,5 @@
 <div class="users-new">
-	<%= bootstrap_form_for User.new do |f| %>
-		<%= f.text_field :username %>
-	<br>
-		<%= f.text_field :email %>
-	<br>
-		<%= f.password_field :password %>
-	<br>
-	<%= f.submit %>
-	<% end %>
+	<%= render "user_form" %>
 </div>
 
 <!-- user signup page -->

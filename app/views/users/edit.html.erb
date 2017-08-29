@@ -1,14 +1,6 @@
 <div class="users-edit">
 	<% if current_user %>
-		<%= bootstrap_form_for @user do |f| %>
-			<%= f.text_field :username %>
-		<br>
-			<%= f.text_field :email %>
-		<br>
-			<%= f.password_field :password %>
-		<br>
-			<%= f.submit "Update" %>
-		<% end %>
+		<%= render "user_form" %>
 	<% end %>
 </div>
 
